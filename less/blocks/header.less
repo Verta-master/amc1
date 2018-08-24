@@ -1,0 +1,113 @@
+.header {
+  background-color: #fff;
+  border-bottom: 3px solid @red;
+}
+
+.header__top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+}
+
+.header__contacts {
+  margin-left: auto;
+  margin-right: 90px;
+}
+
+.header__login,
+.header__cart,
+.mail,
+.phone {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  text-decoration: none;
+  .transition();
+  
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+  }
+}
+
+.phone {
+  &::before {
+    width: 19px;
+    height: 30px;
+    top: 5px;
+    left: 0;
+    background-image: url(../img/smartphone.svg);
+  }
+  &:hover,
+  &:active {
+    &::before {
+      
+    }
+  }
+}
+
+.mail {
+  &::before {
+    width: 23px;
+    height: 15px;
+    top: 5px;
+    left: 2px;
+    background-image: url(../img/message.svg);
+  }
+  &:hover,
+  &:active {
+    &::before {
+      
+    }
+  }
+}
+
+.header__login {
+  &::before {
+    width: 18px;
+    height: 25px;
+    top: 2px;
+    left: 0;
+    background-image: url(../img/padlock.svg);
+  }
+  &:hover,
+  &:active {
+    &::before {
+      
+    }
+  }
+}
+
+.header__cart {
+  &::before {
+    width: 28px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background-image: url(../img/shopping-cart.svg);
+  }
+  &:hover,
+  &:active {
+    &::before {
+      
+    }
+  }
+}

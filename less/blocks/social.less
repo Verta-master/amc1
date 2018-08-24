@@ -1,0 +1,32 @@
+.social {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  &--promo {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: ~"calc(50% + 425px)";
+    width: 50%;
+    padding: 5px 20px;
+    background-image: url(../img/shape.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.social__item {
+  margin-left: 7px;
+  
+  a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
