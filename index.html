@@ -171,7 +171,7 @@
     <section class="company wrapper">
       <p class="title-2">О компании</p>
       <div class="company__name">
-        <p>ООО"АМС -Аметист"<span>Год основания: 1997</span></p>
+        <p><span>ООО"АМС -Аметист"</span><i>Год основания: 1997</i></p>
       </div>
       <div class="company__wrap">
         <div class="company__left">
@@ -194,7 +194,7 @@
           <p>Мы делаем уникальные работы по разработке приборов для автомобильной и спец. техники, пультов управления, контроллеров, шкал приборов и т.п.</p>
           <p>Наши приборы представляют централизованную гибкую систему контроля и управления двигателями, гидравлическими системами и прочими управляющими устройствами, входящими в состав дорожно-строительных машин, и другой спец. техники.</p>
         </div>
-        <figure class="company__img">
+        <figure class="company__pic">
           <img src="img/img-8.jpg" alt="РАЗРАБОТКА И ПРОИЗВОДСТВО" width="1000" height="664">
         </figure>
       </div>
@@ -228,8 +228,8 @@
       
       <div class="company__wrap">
         <p class="title-3">ТЮНИНГ (модернизация) автоприборов</p>
-        <div class="company__name">
-          <i>Особое предложение для американских машин - переведем мили в километры без потери показаний!</i>
+        <div class="company__name company__name--wide">
+          <p><i>Особое предложение для американских машин -<br>переведем мили в километры без потери показаний!</i></p>
         </div>
       </div>
       <p>Все, чтобы сделать Вашу машину индивидуальной:</p>
@@ -340,6 +340,11 @@
         nextEl: '.promo__next',
         prevEl: '.promo__prev',
       },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      loop: true,
       simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,
