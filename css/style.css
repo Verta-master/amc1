@@ -809,6 +809,17 @@ button {
   background-image: url(../img/shape.svg);
   background-repeat: no-repeat;
 }
+.social--promo .social__item a {
+  background-color: #fff;
+  border: 1px solid #d02222;
+}
+.social--promo .social__item a:hover,
+.social--promo .social__item a:active {
+  border-color: #fff;
+}
+.social--footer {
+  margin-top: 40px;
+}
 .social__item {
   margin-left: 8px;
 }
@@ -825,14 +836,13 @@ button {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  background-color: #fff;
-  border: 1px solid #d02222;
+  border: 1px solid #333;
   -webkit-transition: ease-out 0.1s;
   transition: ease-out 0.1s;
 }
 .social__item a:hover,
 .social__item a:active {
-  border-color: #fff;
+  border-color: #d02222;
   -webkit-transition: ease-out 0.1s;
   transition: ease-out 0.1s;
 }
@@ -1211,7 +1221,7 @@ button {
 }
 .company__item p {
   margin: 0;
-  max-width: 60%;
+  max-width: 65%;
   padding-right: 25px;
   padding-left: 25px;
   line-height: 1.2;
@@ -1230,6 +1240,10 @@ button {
   height: 100px;
   border-radius: 50%;
   border: 1px solid #d02222;
+}
+.company__icon {
+  width: 80px;
+  opacity: 0.5;
 }
 .list {
   margin: 0;
@@ -1259,4 +1273,59 @@ button {
 .list--half li {
   width: 50%;
   padding-right: 40px;
+}
+.benefits {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: #f6f6f6;
+}
+.benefits .company__item p {
+  padding-right: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+}
+.footer {
+  background-color: #f6f6f6;
+  border-top: 1px solid #d02222;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 14px;
+}
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 40px;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__list li {
+  margin-bottom: 10px;
+}
+.footer__list a {
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+  text-decoration: none;
+}
+.footer__list a:hover,
+.footer__list a:active {
+  color: #d02222;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__title {
+  margin-top: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
 }
