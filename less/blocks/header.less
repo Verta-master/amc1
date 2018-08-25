@@ -4,8 +4,8 @@
 }
 
 .header__top {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +30,7 @@
 .phone {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 40px;
   text-decoration: none;
   .transition();
   
@@ -49,49 +49,53 @@
 }
 
 .phone {
+  margin-bottom: 10px;
+  
   &::before {
-    width: 19px;
-    height: 30px;
-    top: 5px;
+    width: 28px;
+    height: 38px;
+    top: 0;
     left: 0;
     background-image: url(../img/smartphone.svg);
   }
   &:hover,
   &:active {
     &::before {
-      
+      background-image: url(../img/smartphone-red.svg);
     }
   }
 }
 
 .mail {
   &::before {
-    width: 23px;
-    height: 15px;
-    top: 5px;
+    width: 35px;
+    height: 25px;
+    top: 0;
     left: 2px;
     background-image: url(../img/message.svg);
   }
   &:hover,
   &:active {
     &::before {
-      
+      background-image: url(../img/message-red.svg);
     }
   }
 }
 
 .header__login {
+  margin-bottom: 10px;
+  
   &::before {
-    width: 18px;
-    height: 25px;
-    top: 2px;
+    width: 25px;
+    height: 30px;
+    top: 0;
     left: 0;
     background-image: url(../img/padlock.svg);
   }
   &:hover,
   &:active {
     &::before {
-      
+      background-image: url(../img/padlock-red.svg);
     }
   }
 }
@@ -107,7 +111,15 @@
   &:hover,
   &:active {
     &::before {
-      
+      background-image: url(../img/shopping-cart-red.svg);
+    }
+  }
+  
+  &--full {
+    color: @red;
+    
+    &::before {
+      background-image: url(../img/shopping-cart-red.svg);
     }
   }
 }
