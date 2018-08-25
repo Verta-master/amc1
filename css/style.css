@@ -470,6 +470,7 @@ button {
   margin-right: auto;
 }
 .header {
+  position: relative;
   background-color: #fff;
   border-bottom: 3px solid #d02222;
 }
@@ -724,6 +725,7 @@ button {
   top: 225px;
   left: calc(50% - 620px);
   max-width: 710px;
+  padding-left: 45px;
   font-size: 60px;
   font-weight: 500;
   color: #fff;
@@ -738,7 +740,7 @@ button {
   content: "";
   position: absolute;
   top: 20px;
-  left: -40px;
+  left: 0;
   width: 45px;
   height: 45px;
   background-image: url(../img/next-red.svg);
@@ -938,6 +940,7 @@ button {
 .title-2 {
   margin-top: 0;
   margin-bottom: 40px;
+  padding-left: 30px;
   position: relative;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
@@ -949,7 +952,7 @@ button {
   content: "";
   position: absolute;
   top: 10px;
-  left: -30px;
+  left: 0;
   width: 30px;
   height: 30px;
   background-image: url(../img/next-red.svg);
@@ -1348,4 +1351,136 @@ button {
   font-size: 16px;
   letter-spacing: 0.025em;
   text-transform: uppercase;
+}
+@media (max-width: 1300px) {
+  .wrapper {
+    width: 100%;
+  }
+  .news__item,
+  .offer__item {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1250px) {
+  .menu {
+    margin-right: 40px;
+  }
+  .promo__slide a {
+    left: 15px;
+  }
+  .menu__link {
+    font-size: 16px;
+  }
+  .social--promo {
+    left: 80%;
+  }
+  .offer__list {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .news__list {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .news__item,
+  .offer__item {
+    margin-right: 0;
+  }
+  .company__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .company__item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .company__name--wide {
+    margin-right: 0;
+  }
+  .benefits {
+    padding-bottom: 50px;
+  }
+  .footer {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 1022px) {
+  .header__contacts {
+    margin-right: 30px;
+  }
+  .menu__btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icon-menu-ham.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 19px;
+  }
+  .menu__btn:hover,
+  .menu__btn:active {
+    background-image: url(../img/icon-menu-ham-red.svg);
+  }
+  .menu_list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    width: 300px;
+    background-color: #fff;
+  }
+  .menu__item {
+    width: 100%;
+  }
+  .menu--opened .menu__btn {
+    background-image: url(../img/icon-menu-cross.svg);
+    background-size: 24px 24px;
+  }
+  .social--promo {
+    left: 70%;
+  }
+  .search__input {
+    opacity: 1;
+    position: static;
+    width: 160px;
+    height: 35px;
+    border: 1px solid rgba(51, 51, 51, 0.5);
+  }
+  .search__input::-webkit-input-placeholder {
+    opacity: 0.5;
+  }
+  .search__input:-ms-input-placeholder {
+    opacity: 0.5;
+  }
+  .search__input::-ms-input-placeholder {
+    opacity: 0.5;
+  }
+  .search__input::placeholder {
+    opacity: 0.5;
+  }
+  .search__input:focus {
+    border-color: #d02222;
+  }
+  .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .search:hover .search__input {
+    height: 35px;
+  }
 }
