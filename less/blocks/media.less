@@ -1,0 +1,125 @@
+@media (max-width: 1300px) {
+  .wrapper {
+    width: 100%;
+  }
+  .news__item,
+  .offer__item {
+    margin-right: 20px;
+  }
+}
+
+//-------------------------------------
+@media (max-width: 1250px) {
+  .menu {
+    margin-right: 40px;
+  }
+  .promo__slide a {
+    left: 15px;
+  }
+  .menu__link {
+    font-size: 16px;
+  }
+  .social--promo {
+    left: 80%;
+  }
+  .offer__list {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+  .news__list {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+  }
+  .news__item,
+  .offer__item {
+    margin-right: 0;
+  }
+  .company__list {
+    flex-wrap: wrap;
+  }
+  .company__item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .company__name--wide {
+    margin-right: 0;
+  }
+  .benefits {
+    padding-bottom: 50px;
+  }
+  .footer {
+    padding-bottom: 20px;
+  }
+}
+
+//-------------------------------
+@media (max-width: 1022px) {
+  .header__contacts {
+    margin-right: 30px;
+  }
+  .menu__btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icon-menu-ham.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 19px;
+    
+    &:hover,
+    &:active {
+      background-image: url(../img/icon-menu-ham-red.svg);
+    }
+  }
+  .menu_list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    width: 300px;
+    background-color: #fff;
+  }
+  .menu__item {
+    width: 100%;
+  }
+  .menu--opened {
+    .menu__btn {
+      background-image: url(../img/icon-menu-cross.svg);
+      background-size: 24px 24px;
+    }
+  }
+  .social--promo {
+    left: 70%;
+  }
+  .search__input {
+    opacity: 1;
+    position: static;
+    width: 160px;
+    height: 35px;
+    border: 1px solid rgba(51,51,51,0.5);
+    
+    &::placeholder {
+      opacity: 0.5;
+    }
+    
+    &:focus {
+      border-color: @red;
+    }
+  }
+  .search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    &:hover {
+      .search__input {
+        height: 35px;
+      }
+    }
+  }
+}
