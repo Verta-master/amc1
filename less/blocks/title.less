@@ -19,3 +19,30 @@
     background-size: contain;
   }
 }
+
+.title-3 {
+  margin-top: 0;
+  position: relative;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    background-color: rgba(51,51,51,0.5);
+  }
+  &::before {
+    bottom: 0;
+    width: 200px;
+  }
+  &::after {
+    bottom: -5px;
+    width: 100px;
+  }
+}

@@ -1,6 +1,15 @@
 .promo {
   position: relative;
   overflow-x: hidden;
+  
+  &:hover,
+  &:active {
+    .promo__prev,
+    .promo__next {
+      opacity: 1;
+      .transition();
+    }
+  }
 }
 
 .swiper-wrapper {
@@ -82,6 +91,8 @@
   background-image: url(../img/next.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  opacity: 0;
+  .transition();
   
   &:hover,
   &:active {
