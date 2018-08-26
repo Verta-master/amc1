@@ -601,7 +601,7 @@ button {
 .menu__btn {
   display: none;
 }
-.menu_list {
+.menu__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -973,7 +973,7 @@ button {
   content: "";
   position: absolute;
   left: 0;
-  height: 2px;
+  height: 1px;
   background-color: rgba(51, 51, 51, 0.5);
 }
 .title-3::before {
@@ -1428,14 +1428,16 @@ button {
   .menu__btn:active {
     background-image: url(../img/icon-menu-ham-red.svg);
   }
-  .menu_list {
+  .menu__list {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -15px;
     z-index: 10;
     width: 300px;
+    padding: 15px;
     background-color: #fff;
+    border-top: 3px solid #d02222;
   }
   .menu__item {
     width: 100%;
@@ -1482,5 +1484,110 @@ button {
   }
   .search:hover .search__input {
     height: 35px;
+  }
+  .company__name {
+    margin-top: 30px;
+  }
+  .company__name--wide {
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .company__wrap {
+    display: block;
+  }
+  .list--half li,
+  .company__block,
+  .company__left,
+  .company__right {
+    width: 100%;
+    padding-right: 0;
+  }
+  .title-3 {
+    margin-bottom: 30px;
+  }
+  .company__pic {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 665px) {
+  .header__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .header__contacts {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .social--promo {
+    left: 55%;
+  }
+  .promo__slide a {
+    top: 110px;
+    font-size: 36px;
+    padding-left: 30px;
+  }
+  .promo__slide a::before {
+    width: 30px;
+    height: 30px;
+    top: 7px;
+  }
+  .promo__slide {
+    height: 500px;
+  }
+  .offer__item:nth-child(4n),
+  .offer__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .company__name--wide,
+  .company__item,
+  .company__pic {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .menu__list {
+    width: 100vw;
+  }
+  .social--promo {
+    left: 40%;
+    width: 70%;
+  }
+  .title-2 {
+    padding-left: 20px;
+    font-size: 24px;
+  }
+  .title-2::before {
+    width: 20px;
+    height: 20px;
+    top: 7px;
+  }
+  .title-3 {
+    font-size: 18px;
+  }
+  .benefits,
+  .news,
+  .company,
+  .offer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .company__list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .footer__top {
+    display: block;
+  }
+  .footer__contacts {
+    margin-top: 30px;
   }
 }
