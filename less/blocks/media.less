@@ -6,6 +6,12 @@
   .offer__item {
     margin-right: 20px;
   }
+  .title {
+    margin-left: 0;
+  }
+  .breadcrumbs {
+    padding-left: 45px;
+  }
 }
 
 //-------------------------------------
@@ -53,6 +59,40 @@
   }
   .footer {
     padding-bottom: 20px;
+  }
+  .title {
+    margin-top: 50px;
+    padding-left: 40px;
+    font-size: 48px;
+    
+    &::before {
+      top: 12px;
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .breadcrumbs {
+    padding-left: 40px;
+  }
+  .map__address {
+    right: 20px;
+    left: auto;
+  }
+  .map__location,
+  .map__time {
+    font-size: 16px;
+  }
+  .map__address {
+    width: 350px;
+    padding: 20px;
+  }
+  .contacts__block {
+    width: 48%;
+    padding-right: 20px;
+  }
+  .contacts__data .title-2,
+  .contacts__block .title-2 {
+    font-size: 32px;
   }
 }
 
@@ -150,6 +190,13 @@
     margin-right: auto;
     margin-top: 30px;
   }
+  .contacts__wrap {
+    display: block;
+  }
+  .contacts__block {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 //-------------------------------------
@@ -193,6 +240,36 @@
   .company__pic {
     width: 100%;
   }
+  .map__address {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+    transform: none;
+    box-shadow: none;
+  }
+  .contacts {
+    padding-top: 50px;
+  }
+  .title {
+    padding-left: 30px;
+    font-size: 36px;
+    
+    &::before {
+      width: 25px;
+      height: 25px;
+      top: 10px;
+    }
+  }
+  .breadcrumbs {
+    padding-left: 30px;
+  }
+  .map iframe,
+  .map__block {
+    height: 400px;
+  }
+  .contacts__data {
+    padding-right: 20px;
+  }
 }
 
 //--------------------------------
@@ -233,5 +310,43 @@
   }
   .footer__contacts {
     margin-top: 30px;
+  }
+  .map__location,
+  .map__time {
+    padding-left: 50px;
+    
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .contacts__block .title-2,
+  .contacts__data .title-2 {
+    font-size: 24px;
+    margin-left: -20px;
+  }
+  .contacts__data,
+  .contacts__block {
+    padding-left: 35px;
+  }
+  .contacts__table {
+    tr {
+      display: block;
+      height: auto;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    td:first-child {
+      width: 100%;
+      display: block;
+      font-weight: 500;
+    }
+  }
+  .feedback__btn,
+  .feedback__wrap {
+    width: 100%;
+  }
+  .feedback__wrap .title-2 {
+    margin-left: 0;
   }
 }

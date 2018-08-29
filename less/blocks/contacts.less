@@ -17,16 +17,19 @@
   width: 45%;
   margin-bottom: 80px;
   .blockpad();
+  padding-top: 25px;
+  padding-left: 55px;
   
   .title-2 {
-    margin-left: -45px;
+    margin-left: -35px;
+    margin-bottom: 5px;
   }
 }
 
 .contacts__phone {
   position: relative;
   padding-left: 35px;
-  margin-top: 30px;
+  margin-top: 25px;
   
   &::before {
     content: "";
@@ -44,6 +47,32 @@
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
+  }
+}
+
+.contacts__viber {
+  position: relative;
+  
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+  }
+  
+  &::before {
+    top: 0;
+    left: 145px;
+    background-image: url(../img/whatsapp.svg);
+  }
+  
+  &::after {
+    top: 2px;
+    left: 175px;
+    background-image: url(../img/viber.svg);
   }
 }
 
@@ -71,7 +100,8 @@
   .blockpad();
   
   .title-2 {
-    margin-left: -45px;
+    margin-left: -35px;
+    margin-bottom: 40px;
   }
 }
 
@@ -89,6 +119,6 @@
   }
   
   td:first-child {
-    width: 35%;
+    width: 32%;
   }
 }
