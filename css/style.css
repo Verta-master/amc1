@@ -1893,6 +1893,9 @@ a.breadcrumbs__link::after {
   .breadcrumbs {
     padding-left: 45px;
   }
+  .gallery__item {
+    margin-right: 20px;
+  }
 }
 @media (max-width: 1250px) {
   .menu {
