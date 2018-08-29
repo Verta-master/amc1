@@ -1,3 +1,29 @@
+.title {
+  position: relative;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  padding-left: 45px;
+  font-size: 60px;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: none;
+  .transition();
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background-image: url(../img/next-red.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
 .title-2 {
   margin-top: 0;
   margin-bottom: 40px;
