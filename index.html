@@ -6,6 +6,7 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>amc1.ru</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
           <a href="mailto:amc@amc1.ru" class="mail">amc@amc1.ru</a>
         </div>
         <div class="header__user">
-          <a href="#" class="header__login">Вход</a>
+          <a data-fancybox data-src="#call" href="javascript:;" class="header__login">Вход</a>
           <a href="#" class="header__cart header__cart--full">1500 &#8381;</a>
         </div>
       </div>
@@ -326,9 +327,22 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="title-2">АВТОРИЗАЦИЯ</p>
+    <form action="#" method="post" class="modal__form">
+      <input type="text" class="modal__input" placeholder="Имя пользователя">
+      <input type="password" class="modal__input" placeholder="Пароль">
+      <a href="#" class="modal__link">Забыли пароль?</a>
+      <button type="submit" class="btn modal__btn">ВОЙТИ</button>
+      <p class="modal__comment">Если у вас нет аккаунта, <a href="#">зарегистрируйтесь</a></p>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
 <!-- Slider -->
   <script>
