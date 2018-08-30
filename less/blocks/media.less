@@ -14,7 +14,7 @@
   }
   .tabs__item,
   .gallery__item {
-    margin-right: 20px;
+    margin-right: 22px;
   }
 }
 
@@ -98,12 +98,16 @@
   .contacts__block .title-2 {
     font-size: 32px;
   }
+  .tabs__list,
   .gallery__list {
     justify-content: space-around;
   }
   .gallery__item {
     margin-right: 0;
     margin-bottom: 35px;
+  }
+  .tabs__item {
+    margin-right: 0;
   }
 }
 
@@ -375,5 +379,16 @@
   }
   .auto__sublist li {
     width: 50%;
+  }
+  .tabs__title {
+    flex-direction: column;
+  }
+  .tabs__name {
+    margin-right: 0;
+    margin-bottom: 5px;
+    
+    &::after {
+      display: none;
+    }
   }
 }
