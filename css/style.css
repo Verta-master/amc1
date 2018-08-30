@@ -2122,7 +2122,7 @@ a.breadcrumbs__link::after {
   }
   .tabs__item,
   .gallery__item {
-    margin-right: 20px;
+    margin-right: 22px;
   }
 }
 @media (max-width: 1250px) {
@@ -2207,6 +2207,7 @@ a.breadcrumbs__link::after {
   .contacts__block .title-2 {
     font-size: 32px;
   }
+  .tabs__list,
   .gallery__list {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -2214,6 +2215,9 @@ a.breadcrumbs__link::after {
   .gallery__item {
     margin-right: 0;
     margin-bottom: 35px;
+  }
+  .tabs__item {
+    margin-right: 0;
   }
 }
 @media (max-width: 1022px) {
@@ -2483,5 +2487,18 @@ a.breadcrumbs__link::after {
   }
   .auto__sublist li {
     width: 50%;
+  }
+  .tabs__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabs__name {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .tabs__name::after {
+    display: none;
   }
 }
