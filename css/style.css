@@ -1839,6 +1839,7 @@ a.breadcrumbs__link::after {
 .gallery__img {
   width: 100%;
   height: 250px;
+  border-bottom: 2px solid #d02222;
   overflow: hidden;
 }
 .gallery__img a {
@@ -1934,6 +1935,177 @@ a.breadcrumbs__link::after {
 .auto__sublist a:active {
   text-decoration: underline;
 }
+.tabs__title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(51, 51, 51, 0.15);
+          box-shadow: 0px 0px 10px 0px rgba(51, 51, 51, 0.15);
+}
+.tabs__title .ui-tabs-active {
+  color: #d02222;
+}
+.tabs__field {
+  margin-bottom: 80px;
+}
+.tabs__name {
+  position: relative;
+  margin-right: 60px;
+  font-size: 20px;
+}
+.tabs__name::after {
+  content: "|";
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  color: rgba(51, 51, 51, 0.5);
+}
+.tabs__name:last-child::after {
+  display: none;
+}
+.tabs__name a {
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__name a:hover,
+.tabs__name a:active {
+  color: #d02222;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+.tabs__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 290px;
+  min-height: 290px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(51, 51, 51, 0.15);
+          box-shadow: 0px 0px 10px 0px rgba(51, 51, 51, 0.15);
+  overflow: hidden;
+}
+.tabs__item:nth-child(4n) {
+  margin-right: 0;
+}
+.tabs__item:hover .tabs__img img,
+.tabs__item:active .tabs__img img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__img {
+  width: 100%;
+  border-bottom: 2px solid #d02222;
+  overflow: hidden;
+}
+.tabs__img a {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tabs__img img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__info {
+  position: relative;
+  padding: 20px 15px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.tabs__head {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__head:hover,
+.tabs__head:active {
+  color: #d02222;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__more {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  color: #929292;
+  font-size: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__more:hover,
+.tabs__more:active {
+  color: #d02222;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 @media (max-width: 1300px) {
   .wrapper {
     width: 100%;
@@ -1948,6 +2120,7 @@ a.breadcrumbs__link::after {
   .breadcrumbs {
     padding-left: 45px;
   }
+  .tabs__item,
   .gallery__item {
     margin-right: 20px;
   }
