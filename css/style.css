@@ -714,7 +714,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 900px;
+  height: 500px;
 }
 .promo__slide img {
   display: block;
@@ -729,11 +729,11 @@ button {
   display: block;
   position: absolute;
   z-index: 5;
-  top: 225px;
+  top: 125px;
   left: calc(50% - 620px);
   max-width: 710px;
-  padding-left: 45px;
-  font-size: 60px;
+  padding-left: 35px;
+  font-size: 48px;
   font-weight: 500;
   color: #fff;
   line-height: 1.2;
@@ -746,10 +746,10 @@ button {
 .promo__slide a::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 12px;
   left: 0;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   background-image: url(../img/next-red.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -946,11 +946,11 @@ button {
 }
 .title {
   position: relative;
-  margin-top: 85px;
+  margin-top: 50px;
   margin-bottom: 20px;
-  margin-left: -45px;
-  padding-left: 45px;
-  font-size: 60px;
+  margin-left: -35px;
+  padding-left: 35px;
+  font-size: 48px;
   font-weight: 500;
   color: #333;
   line-height: 1.2;
@@ -962,10 +962,10 @@ button {
 .title::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 12px;
   left: 0;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   background-image: url(../img/next-red.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -973,10 +973,10 @@ button {
 .title-2 {
   margin-top: 0;
   margin-bottom: 40px;
-  padding-left: 30px;
+  padding-left: 25px;
   position: relative;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 36px;
+  font-size: 32px;
   color: #333;
   font-weight: 400;
   text-transform: uppercase;
@@ -984,10 +984,10 @@ button {
 .title-2::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 12px;
   left: 0;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background-image: url(../img/next-red.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -1390,7 +1390,7 @@ button {
   text-transform: uppercase;
 }
 .breadcrumbs {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 a.breadcrumbs__link {
   position: relative;
@@ -1414,10 +1414,10 @@ a.breadcrumbs__link::after {
   display: block;
   border: 0;
   width: 100%;
-  height: 600px;
+  height: 400px;
 }
 .map__block {
-  height: 600px;
+  height: 400px;
   background-image: url(../img/map.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -1430,10 +1430,7 @@ a.breadcrumbs__link::after {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(51, 51, 51, 0.15);
           box-shadow: 0px 0px 10px 0px rgba(51, 51, 51, 0.15);
-  padding-left: 45px;
-  padding-right: 30px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 30px;
   width: 500px;
   top: 50%;
   left: calc(50% + 115px);
@@ -1451,8 +1448,8 @@ a.breadcrumbs__link::after {
   position: absolute;
   top: 0;
   left: 0;
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   background-image: url(../img/placeholder.svg);
   background-repeat: no-repeat;
 }
@@ -1468,8 +1465,8 @@ a.breadcrumbs__link::after {
   position: absolute;
   top: 5px;
   left: 0;
-  width: 58px;
-  height: 58px;
+  width: 48px;
+  height: 48px;
   background-image: url(../img/calendar.svg);
   background-repeat: no-repeat;
 }
@@ -1877,7 +1874,7 @@ a.breadcrumbs__link::after {
 .gallery__title a {
   display: block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -2007,11 +2004,10 @@ a.breadcrumbs__link::after {
   transition: ease-out 0.3s;
 }
 .auto__shop {
-  width: 300px;
+  width: 250px;
   max-width: 100%;
   height: 50px;
   margin-left: auto;
-  font-size: 24px;
 }
 .tabs__title {
   margin: 0;
@@ -2244,13 +2240,32 @@ span.pages__link {
   }
   .title {
     margin-left: 0;
+    font-size: 36px;
+    padding-left: 25px;
+  }
+  .title::before {
+    width: 25px;
+    height: 25px;
+    top: 10px;
   }
   .breadcrumbs {
-    padding-left: 45px;
+    padding-left: 25px;
   }
   .tabs__item,
   .gallery__item {
     margin-right: 22px;
+  }
+  .map__location,
+  .map__time {
+    font-size: 15px;
+  }
+  .map__address {
+    right: 20px;
+    left: auto;
+  }
+  .map__address {
+    width: 400px;
+    padding: 20px;
   }
 }
 @media (max-width: 1250px) {
@@ -2259,6 +2274,13 @@ span.pages__link {
   }
   .promo__slide a {
     left: 15px;
+    font-size: 36px;
+    padding-left: 25px;
+  }
+  .promo__slide a::before {
+    width: 25px;
+    height: 25px;
+    top: 10px;
   }
   .menu__link {
     font-size: 16px;
@@ -2302,38 +2324,9 @@ span.pages__link {
   .footer {
     padding-bottom: 20px;
   }
-  .title {
-    margin-top: 50px;
-    padding-left: 40px;
-    font-size: 48px;
-  }
-  .title::before {
-    top: 12px;
-    width: 35px;
-    height: 35px;
-  }
-  .breadcrumbs {
-    padding-left: 40px;
-  }
-  .map__address {
-    right: 20px;
-    left: auto;
-  }
-  .map__location,
-  .map__time {
-    font-size: 16px;
-  }
-  .map__address {
-    width: 350px;
-    padding: 20px;
-  }
   .contacts__block {
     width: 48%;
     padding-right: 20px;
-  }
-  .contacts__data .title-2,
-  .contacts__block .title-2 {
-    font-size: 32px;
   }
   .auto__pics,
   .tabs__list,
@@ -2478,6 +2471,9 @@ span.pages__link {
   .social--promo {
     left: 55%;
   }
+  .promo__slide {
+    height: 350px;
+  }
   .promo__slide a {
     top: 110px;
     font-size: 36px;
@@ -2541,14 +2537,9 @@ span.pages__link {
   .auto__item .title-2 {
     margin-left: 0;
   }
-}
-@media (max-width: 480px) {
-  .menu__list {
-    width: 100vw;
-  }
-  .social--promo {
-    left: 40%;
-    width: 70%;
+  .offer {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .title-2 {
     padding-left: 20px;
@@ -2561,6 +2552,15 @@ span.pages__link {
   }
   .title-3 {
     font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .menu__list {
+    width: 100vw;
+  }
+  .social--promo {
+    left: 40%;
+    width: 70%;
   }
   .benefits,
   .news,
@@ -2645,5 +2645,25 @@ span.pages__link {
   }
   .auto__list--news .auto__item .title-2 {
     margin-left: 0;
+  }
+  .promo__slide {
+    height: 350px;
+  }
+  .title,
+  .promo__slide a {
+    padding-left: 20px;
+    font-size: 24px;
+  }
+  .title::before,
+  .promo__slide a::before {
+    width: 20px;
+    height: 20px;
+    top: 6px;
+  }
+  .company__name {
+    max-width: 100%;
+  }
+  .breadcrumbs {
+    padding-left: 20px;
   }
 }
