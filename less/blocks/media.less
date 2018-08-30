@@ -8,13 +8,33 @@
   }
   .title {
     margin-left: 0;
+    font-size: 36px;
+    padding-left: 25px;
+    
+    &::before {
+      width: 25px;
+      height: 25px;
+      top: 10px;
+    }
   }
   .breadcrumbs {
-    padding-left: 45px;
+    padding-left: 25px;
   }
   .tabs__item,
   .gallery__item {
     margin-right: 22px;
+  }
+  .map__location,
+  .map__time {
+    font-size: 15px;
+  }
+  .map__address {
+    right: 20px;
+    left: auto;
+  }
+  .map__address {
+    width: 400px;
+    padding: 20px;
   }
 }
 
@@ -25,6 +45,14 @@
   }
   .promo__slide a {
     left: 15px;
+    font-size: 36px;
+    padding-left: 25px;
+    
+    &::before {
+      width: 25px;
+      height: 25px;
+      top: 10px;
+    }
   }
   .menu__link {
     font-size: 16px;
@@ -64,39 +92,9 @@
   .footer {
     padding-bottom: 20px;
   }
-  .title {
-    margin-top: 50px;
-    padding-left: 40px;
-    font-size: 48px;
-    
-    &::before {
-      top: 12px;
-      width: 35px;
-      height: 35px;
-    }
-  }
-  .breadcrumbs {
-    padding-left: 40px;
-  }
-  .map__address {
-    right: 20px;
-    left: auto;
-  }
-  .map__location,
-  .map__time {
-    font-size: 16px;
-  }
-  .map__address {
-    width: 350px;
-    padding: 20px;
-  }
   .contacts__block {
     width: 48%;
     padding-right: 20px;
-  }
-  .contacts__data .title-2,
-  .contacts__block .title-2 {
-    font-size: 32px;
   }
   .auto__pics,
   .tabs__list,
@@ -236,6 +234,9 @@
   .social--promo {
     left: 55%;
   }
+  .promo__slide {
+    height: 350px;
+  }
   .promo__slide a {
     top: 110px;
     font-size: 36px;
@@ -300,16 +301,9 @@
       margin-left: 0;
     }
   }
-}
-
-//--------------------------------
-@media (max-width: 480px) {
-  .menu__list {
-    width: 100vw;
-  }
-  .social--promo {
-    left: 40%;
-    width: 70%; 
+  .offer {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .title-2 {
     padding-left: 20px;
@@ -323,6 +317,17 @@
   }
   .title-3 {
     font-size: 18px;
+  }
+}
+
+//--------------------------------
+@media (max-width: 480px) {
+  .menu__list {
+    width: 100vw;
+  }
+  .social--promo {
+    left: 40%;
+    width: 70%; 
   }
   .benefits,
   .news,
@@ -410,5 +415,25 @@
         margin-left: 0;
       }
     }
+  }
+  .promo__slide {
+    height: 350px;
+  }
+  .title,
+  .promo__slide a {
+    padding-left: 20px;
+    font-size: 24px;
+    
+    &::before {
+      width: 20px;
+      height: 20px;
+      top: 6px;
+    }
+  }
+  .company__name {
+    max-width: 100%;
+  }
+  .breadcrumbs {
+    padding-left: 20px;
   }
 }
