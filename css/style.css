@@ -2012,6 +2012,16 @@ a.breadcrumbs__link::after {
   height: 50px;
   margin-left: auto;
 }
+.tabs--shop {
+  margin-bottom: 100px;
+}
+.tabs--shop .tabs__list {
+  margin-top: 40px;
+}
+.tabs--shop .tabs__img img {
+  max-width: 100%;
+  height: auto;
+}
 .tabs__title {
   margin: 0;
   padding: 0;
