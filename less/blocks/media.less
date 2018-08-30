@@ -215,6 +215,20 @@
   .auto__sublist li {
     width: 25%;
   }
+  .delivery__row,
+  .delivery__wrap {
+    flex-wrap: wrap;
+  }
+  .delivery__part {
+    width: 100%;
+  }
+  .delivery__circle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .delivery__comment {
+    max-width: 450px;
+  }
 }
 
 //-------------------------------------
@@ -317,6 +331,30 @@
   }
   .title-3 {
     font-size: 18px;
+  }
+  .delivery__process,
+  .delivery__block {
+    padding: 20px;
+  }
+  .delivery__point {
+    width: 100%;
+  }
+  .delivery__process,
+  .delivery__post {
+    display: block;
+  }
+  .delivery__about,
+  .delivery__info {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .delivery__item {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .delivery__about {
+    margin-left: 0;
   }
 }
 
@@ -424,5 +462,41 @@
   }
   .breadcrumbs {
     padding-left: 20px;
+  }
+  .title-2 {
+    font-size: 20px;
+  }
+  .delivery__subtitle {
+    font-size: 18px;
+  }
+  .delivery__comment {
+    width: 50%;
+    font-size: 15px;
+  }
+  .delivery__title {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .delivery__point {
+    flex-direction: column;
+    align-items: center;
+    
+    &:nth-child(2n) {
+      .delivery__circle {
+        order: 1;
+        margin-left: 0;
+      }
+      p {
+        order: 2;
+      }
+    }
+    
+    p {
+      width: 100%;
+      text-align: center;
+    }
+    .delivery__circle {
+      margin-right: 0;
+    }
   }
 }
