@@ -252,6 +252,20 @@
     margin-bottom: 0;
     cursor: pointer;
   }
+  .card {
+    display: block;
+  }
+  .card__slider {
+    width: 400px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .card__info {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 //-------------------------------------
@@ -382,6 +396,31 @@
   .sorting__plate-btn,
   .sorting__table-btn {
     display: none;
+  }
+  .catalog__form--card {
+    flex-direction: column;
+    
+    .catalog__buy {
+      margin-bottom: 30px;
+      width: 260px;
+    }
+    .catalog__click {
+      width: 100%;
+    }
+  }
+  .card__price {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .card__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card__yes,
+  .card__no,
+  .card__maker {
+    text-align: center;
   }
 }
 
@@ -528,5 +567,8 @@
   }
   .sorting__show {
     margin-left: 0;
+  }
+  .review__input {
+    width: 100%;
   }
 }
