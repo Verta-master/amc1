@@ -9,6 +9,13 @@
       top: 12px;
     }
   }
+  
+  &--click {
+    .modal__form {
+      width: 300px;
+      max-width: 100%;
+    }
+  }
 }
 
 .modal__form {
@@ -19,6 +26,10 @@
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
+  
+  span {
+    color: @red;
+  }
 }
 
 .modal__input {
@@ -45,4 +56,14 @@
   width: 100%;
   height: 50px;
   margin-bottom: 20px;
+}
+
+.modal__label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  
+  span {
+    color: @red;
+  }
 }
