@@ -422,6 +422,75 @@
   .card__maker {
     text-align: center;
   }
+  .cart__remove {
+    width: 100%;
+  }
+  .cart__item {
+    display: block;
+    
+    &--header {
+      display: none;
+    }
+  }
+  .cart__name,
+  .cart__number,
+  .cart__price,
+  .cart__total {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .cart__number,
+  .cart__price,
+  .cart__total {
+    text-align: right;
+    
+    span {
+      display: block;
+    }
+  }
+  .cart__field {
+    margin-right: 0;
+  }
+  .cart__btn {
+    display: block;
+    width: 80px;
+    margin-left: 0;
+    text-align: left;
+    border: 0;
+    border-radius: 0;
+    background-image: none;
+    
+    span {
+      display: block;
+      color: @red;
+    }
+    
+    &:hover,
+    &:active {
+      border: 0;
+      background-image: none;
+      
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+  .cart__name {
+    padding-left: 0;
+  }
+  .cart__img {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .cart__btns {
+    justify-content: center;
+  }
+  .cart__comment {
+    text-align: center;
+  }
 }
 
 //--------------------------------
