@@ -3945,6 +3945,7 @@ input.cart__change {
   }
   .title-2::before {
     font-size: 38px;
+    top: -5px;
   }
   .delivery__subtitle {
     font-size: 18px;
