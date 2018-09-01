@@ -3082,6 +3082,14 @@ span.pages__link {
   font-size: 18px;
   font-weight: 500;
 }
+.card__articul {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px 10px;
+  color: #d02222;
+  border: 1px solid #d02222;
+  border-radius: 5px;
+}
 .review {
   margin-bottom: 100px;
 }
@@ -3838,6 +3846,12 @@ input.cart__change {
   }
   .feedback__wrap .title-2 {
     margin-left: 0;
+  }
+  .card__articul {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 @media (max-width: 480px) {
