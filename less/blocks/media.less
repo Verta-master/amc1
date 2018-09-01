@@ -7,14 +7,12 @@
     margin-right: 20px;
   }
   .title {
-    margin-left: 0;
-    font-size: 36px;
+    font-size: 32px;
     padding-left: 25px;
     
     &::before {
-      width: 25px;
-      height: 25px;
-      top: 10px;
+      left: 0;
+      font-size: 56px;
     }
   }
   .breadcrumbs {
@@ -36,6 +34,18 @@
     width: 400px;
     padding: 20px;
   }
+  .promo__slide {
+    a {
+      padding-left: 80px;
+      font-size: 38px;
+      
+      &::before {
+        font-size: 60px;
+        left: 50px;
+        top: -10px;
+      }
+    }
+  }
 }
 
 //-------------------------------------
@@ -45,14 +55,6 @@
   }
   .promo__slide a {
     left: 15px;
-    font-size: 36px;
-    padding-left: 25px;
-    
-    &::before {
-      width: 25px;
-      height: 25px;
-      top: 10px;
-    }
   }
   .menu__link {
     font-size: 16px;
@@ -290,13 +292,11 @@
   }
   .promo__slide a {
     top: 110px;
-    font-size: 36px;
-    padding-left: 30px;
+    font-size: 32px;
     
     &::before {
-      width: 30px;
-      height: 30px;
-      top: 7px;
+      font-size: 48px;
+      left: 60px;
     }
   }
   .promo__slide {
@@ -321,16 +321,6 @@
   }
   .contacts {
     padding-top: 50px;
-  }
-  .title {
-    padding-left: 30px;
-    font-size: 36px;
-    
-    &::before {
-      width: 25px;
-      height: 25px;
-      top: 10px;
-    }
   }
   .breadcrumbs {
     padding-left: 30px;
@@ -361,9 +351,7 @@
     font-size: 24px;
     
     &::before {
-      width: 20px;
-      height: 20px;
-      top: 7px;
+      font-size: 42px;
     }
   }
   .title-3 {
@@ -491,6 +479,9 @@
   .cart__comment {
     text-align: center;
   }
+  .feedback__wrap .title-2 {
+    margin-left: 0;
+  }
 }
 
 //--------------------------------
@@ -530,7 +521,6 @@
   }
   .contacts__block .title-2,
   .contacts__data .title-2 {
-    font-size: 24px;
     margin-left: -20px;
   }
   .contacts__data,
@@ -553,9 +543,6 @@
   .feedback__btn,
   .feedback__wrap {
     width: 100%;
-  }
-  .feedback__wrap .title-2 {
-    margin-left: 0;
   }
   .auto__sublist li {
     width: 50%;
@@ -587,10 +574,14 @@
     font-size: 24px;
     
     &::before {
-      width: 20px;
-      height: 20px;
-      top: 6px;
+      left: 5px;
+      top: -9px;
+      font-size: 40px;
     }
+  }
+  .promo__slide a {
+    top: 90px;
+    padding-right: 10px;
   }
   .company__name {
     max-width: 100%;
@@ -600,6 +591,11 @@
   }
   .title-2 {
     font-size: 20px;
+    padding-left: 15px;
+    
+    &::before {
+      font-size: 38px;
+    }
   }
   .delivery__subtitle {
     font-size: 18px;
@@ -639,5 +635,15 @@
   }
   .review__input {
     width: 100%;
+  }
+  .tabs__name{
+    &:first-child {
+      width: 100%;
+      margin-right: 0;
+      
+      &::after {
+        display: none;
+      }
+    }
   }
 }
