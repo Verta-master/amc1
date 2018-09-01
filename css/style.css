@@ -438,6 +438,7 @@ img {
 a {
   text-decoration: underline;
   color: inherit;
+  outline: none;
 }
 a:hover,
 a:active {
@@ -759,15 +760,13 @@ button {
   transition: ease-out 0.3s;
 }
 .promo__slide a::before {
-  content: "";
+  content: "\203A";
   position: absolute;
-  top: 12px;
-  left: 0;
-  width: 35px;
-  height: 35px;
-  background-image: url(../img/next-red.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  top: -17px;
+  left: 5px;
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 400;
 }
 .promo__slide a:hover,
 .promo__slide a:active {
@@ -796,6 +795,7 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0;
+  outline: none;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -963,9 +963,7 @@ button {
   position: relative;
   margin-top: 50px;
   margin-bottom: 20px;
-  margin-left: -35px;
-  padding-left: 35px;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 500;
   color: #333;
   line-height: 1.2;
@@ -975,37 +973,35 @@ button {
   transition: ease-out 0.3s;
 }
 .title::before {
-  content: "";
+  content: "\203A";
   position: absolute;
-  top: 12px;
-  left: 0;
-  width: 35px;
-  height: 35px;
-  background-image: url(../img/next-red.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  top: -14px;
+  left: -25px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  color: #d02222;
 }
 .title-2 {
   margin-top: 0;
   margin-bottom: 40px;
-  padding-left: 25px;
+  padding-left: 20px;
   position: relative;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   color: #333;
   font-weight: 400;
   text-transform: uppercase;
 }
 .title-2::before {
-  content: "";
+  content: "\203A";
   position: absolute;
-  top: 12px;
+  top: -7px;
   left: 0;
-  width: 25px;
-  height: 25px;
-  background-image: url(../img/next-red.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  color: #d02222;
 }
 .title-3 {
   margin-top: 0;
@@ -1411,6 +1407,8 @@ button {
   margin-top: 40px;
 }
 a.breadcrumbs__link {
+  display: inline-block;
+  vertical-align: bottom;
   position: relative;
   margin-right: 22px;
   text-decoration: none;
@@ -1422,7 +1420,7 @@ a.breadcrumbs__link:active {
 a.breadcrumbs__link::after {
   content: "/";
   position: absolute;
-  bottom: -2px;
+  bottom: 0;
   right: -15px;
 }
 .map {
@@ -1518,7 +1516,7 @@ a.breadcrumbs__link::after {
   padding-left: 55px;
 }
 .contacts__block .title-2 {
-  margin-left: -35px;
+  margin-left: -20px;
   margin-bottom: 5px;
 }
 .contacts__phone {
@@ -1590,7 +1588,7 @@ a.breadcrumbs__link::after {
           box-shadow: 0px 0px 10px 0px rgba(51, 51, 51, 0.15);
 }
 .contacts__data .title-2 {
-  margin-left: -35px;
+  margin-left: -20px;
   margin-bottom: 40px;
 }
 .contacts__table {
@@ -1629,13 +1627,14 @@ a.breadcrumbs__link::after {
   position: relative;
   z-index: 5;
   width: 500px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 70px;
 }
 .feedback__wrap .title-2 {
-  margin-left: -35px;
+  margin-left: -20px;
   margin-bottom: 25px;
   color: #fff;
   text-shadow: 0px 1px 2px #000000;
@@ -3354,14 +3353,12 @@ input.cart__change {
     margin-right: 20px;
   }
   .title {
-    margin-left: 0;
-    font-size: 36px;
+    font-size: 32px;
     padding-left: 25px;
   }
   .title::before {
-    width: 25px;
-    height: 25px;
-    top: 10px;
+    left: 0;
+    font-size: 56px;
   }
   .breadcrumbs {
     padding-left: 25px;
@@ -3382,6 +3379,15 @@ input.cart__change {
     width: 400px;
     padding: 20px;
   }
+  .promo__slide a {
+    padding-left: 80px;
+    font-size: 38px;
+  }
+  .promo__slide a::before {
+    font-size: 60px;
+    left: 50px;
+    top: -10px;
+  }
 }
 @media (max-width: 1250px) {
   .menu {
@@ -3389,13 +3395,6 @@ input.cart__change {
   }
   .promo__slide a {
     left: 15px;
-    font-size: 36px;
-    padding-left: 25px;
-  }
-  .promo__slide a::before {
-    width: 25px;
-    height: 25px;
-    top: 10px;
   }
   .menu__link {
     font-size: 16px;
@@ -3644,13 +3643,11 @@ input.cart__change {
   }
   .promo__slide a {
     top: 110px;
-    font-size: 36px;
-    padding-left: 30px;
+    font-size: 32px;
   }
   .promo__slide a::before {
-    width: 30px;
-    height: 30px;
-    top: 7px;
+    font-size: 48px;
+    left: 60px;
   }
   .promo__slide {
     height: 500px;
@@ -3676,15 +3673,6 @@ input.cart__change {
   }
   .contacts {
     padding-top: 50px;
-  }
-  .title {
-    padding-left: 30px;
-    font-size: 36px;
-  }
-  .title::before {
-    width: 25px;
-    height: 25px;
-    top: 10px;
   }
   .breadcrumbs {
     padding-left: 30px;
@@ -3714,9 +3702,7 @@ input.cart__change {
     font-size: 24px;
   }
   .title-2::before {
-    width: 20px;
-    height: 20px;
-    top: 7px;
+    font-size: 42px;
   }
   .title-3 {
     font-size: 18px;
@@ -3850,6 +3836,9 @@ input.cart__change {
   .cart__comment {
     text-align: center;
   }
+  .feedback__wrap .title-2 {
+    margin-left: 0;
+  }
 }
 @media (max-width: 480px) {
   .menu__list {
@@ -3887,7 +3876,6 @@ input.cart__change {
   }
   .contacts__block .title-2,
   .contacts__data .title-2 {
-    font-size: 24px;
     margin-left: -20px;
   }
   .contacts__data,
@@ -3908,9 +3896,6 @@ input.cart__change {
   .feedback__btn,
   .feedback__wrap {
     width: 100%;
-  }
-  .feedback__wrap .title-2 {
-    margin-left: 0;
   }
   .auto__sublist li {
     width: 50%;
@@ -3940,9 +3925,13 @@ input.cart__change {
   }
   .title::before,
   .promo__slide a::before {
-    width: 20px;
-    height: 20px;
-    top: 6px;
+    left: 5px;
+    top: -9px;
+    font-size: 40px;
+  }
+  .promo__slide a {
+    top: 90px;
+    padding-right: 10px;
   }
   .company__name {
     max-width: 100%;
@@ -3952,6 +3941,10 @@ input.cart__change {
   }
   .title-2 {
     font-size: 20px;
+    padding-left: 15px;
+  }
+  .title-2::before {
+    font-size: 38px;
   }
   .delivery__subtitle {
     font-size: 18px;
@@ -3996,5 +3989,12 @@ input.cart__change {
   }
   .review__input {
     width: 100%;
+  }
+  .tabs__name:first-child {
+    width: 100%;
+    margin-right: 0;
+  }
+  .tabs__name:first-child::after {
+    display: none;
   }
 }
