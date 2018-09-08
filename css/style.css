@@ -3352,6 +3352,32 @@ input.cart__change {
       -ms-flex-align: center;
           align-items: center;
 }
+.review__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 50px;
+}
+.review__list time {
+  font-size: 12px;
+  opacity: 0.7;
+}
+.review__item {
+  margin-bottom: 50px;
+}
+.review__name {
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1;
+}
+.tabs__item {
+  margin-right: 18px;
+}
+.filter-active {
+  color: #d02222;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 @media (max-width: 1300px) {
   .wrapper {
     width: 100%;

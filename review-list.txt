@@ -1,0 +1,42 @@
+html:
+
+<ul class="review__list">
+	<li class="review__item">
+	  <p class="review__name">Иван Иванов</p>
+	  <time datetime="2018-09-05">05.09.2018</time>
+	  <div class="review__text">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa, provident veritatis temporibus distinctio necessitatibus repellendus! Reiciendis error velit laborum necessitatibus pariatur quisquam, debitis voluptas autem quibusdam modi, incidunt. Voluptatibus.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa, provident veritatis temporibus distinctio necessitatibus repellendus! Reiciendis error velit laborum necessitatibus pariatur quisquam, debitis voluptas autem quibusdam modi, incidunt. Voluptatibus.</p>
+	  </div>
+	</li>
+	<li class="review__item">
+	  <p class="review__name">Иван Иванов</p>
+	  <time datetime="2018-09-05">05.09.2018</time>
+	  <div class="review__text">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa, provident veritatis temporibus distinctio necessitatibus repellendus! Reiciendis error velit laborum necessitatibus pariatur quisquam, debitis voluptas autem quibusdam modi, incidunt. Voluptatibus.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa, provident veritatis temporibus distinctio necessitatibus repellendus! Reiciendis error velit laborum necessitatibus pariatur quisquam, debitis voluptas autem quibusdam modi, incidunt. Voluptatibus.</p>
+	  </div>
+	</li>
+</ul>
+
+
+css: 
+
+.review__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 50px;
+}
+.review__list time {
+  font-size: 12px;
+  opacity: 0.7;
+}
+.review__item {
+  margin-bottom: 50px;
+}
+.review__name {
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1;
+}

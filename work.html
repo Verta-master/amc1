@@ -67,16 +67,16 @@
       </nav>
     </section>
     
-    <section class="tabs wrapper" id="tabs">
-      <ul class="tabs__title">
-        <li class="tabs__name"><a href="#tabs-1">Все модели</a></li>
-        <li class="tabs__name"><a href="#tabs-2">Модель 1</a></li>
-        <li class="tabs__name"><a href="#tabs-3">Модель 2</a></li>
-        <li class="tabs__name"><a href="#tabs-4">Модель 3</a></li>
+    <section class="tabs wrapper">
+      <ul class="tabs__title" id="filters">
+        <li class="tabs__name"><a href="#" data-filter="*">Все модели</a></li>
+        <li class="tabs__name"><a href="#" data-filter=".model1">Модель 1</a></li>
+        <li class="tabs__name"><a href="#" data-filter=".model2">Модель 2</a></li>
+        <li class="tabs__name"><a href="#" data-filter=".model3">Модель 3</a></li>
       </ul>
-      <div class="tabs__field" id="tabs-1">
-        <ul class="tabs__list">
-          <li class="tabs__item">
+      <div class="tabs__field">
+        <ul class="tabs__list" id="container">
+          <li class="tabs__item model1">
             <figure class="tabs__img">
               <a href="#">
                 <img src="img/img-16.jpg" alt="спидометр Stewart Model 26 Brass" width="241" height="160">
@@ -87,7 +87,7 @@
               <a href="#" class="tabs__more">&raquo;</a>
             </div>
           </li>
-          <li class="tabs__item">
+          <li class="tabs__item model2">
             <figure class="tabs__img">
               <a href="#">
                 <img src="img/img-17.jpg" alt="BMW 53 год" width="280" height="123">
@@ -98,7 +98,7 @@
               <a href="#" class="tabs__more">&raquo;</a>
             </div>
           </li>
-          <li class="tabs__item">
+          <li class="tabs__item model3">
             <figure class="tabs__img">
               <a href="#">
                 <img src="img/img-18.jpg" alt="BMW 39 год" width="280" height="152">
@@ -109,7 +109,7 @@
               <a href="#" class="tabs__more">&raquo;</a>
             </div>
           </li>
-          <li class="tabs__item">
+          <li class="tabs__item model1">
             <figure class="tabs__img">
               <a href="#">
                 <img src="img/img-19.jpg" alt="DKW" width="223" height="190">
@@ -120,7 +120,7 @@
               <a href="#" class="tabs__more">&raquo;</a>
             </div>
           </li>
-          <li class="tabs__item">
+          <li class="tabs__item model2">
             <figure class="tabs__img">
               <a href="#">
                 <img src="img/img-20.jpg" alt="CATERHAM" width="280" height="187">
@@ -131,7 +131,7 @@
               <a href="#" class="tabs__more">&raquo;</a>
             </div>
           </li>
-          <li class="tabs__item">
+          <li class="tabs__item model3">
             <figure class="tabs__img">
               <a href="#">
                 <img src="img/img-21.jpg" alt="ГАЗ-51" width="253" height="190">
@@ -142,7 +142,7 @@
               <a href="#" class="tabs__more">&raquo;</a>
             </div>
           </li>
-          <li class="tabs__item">
+          <li class="tabs__item model1">
             <figure class="tabs__img">
               <a href="#">
                 <img src="img/img-22.jpg" alt="Jawa 600 Minor" width="268" height="190">
@@ -153,107 +153,7 @@
               <a href="#" class="tabs__more">&raquo;</a>
             </div>
           </li>
-          <li class="tabs__item">
-            <figure class="tabs__img">
-              <a href="#">
-                <img src="img/img-23.jpg" alt="Factory Five '33 Hot Rod" width="280" height="178">
-              </a>
-            </figure>
-            <div class="tabs__info">
-              <a href="#" class="tabs__head">Factory Five '33 Hot Rod</a>
-              <a href="#" class="tabs__more">&raquo;</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="tabs__field" id="tabs-2">
-        <ul class="tabs__list">
-          <li class="tabs__item">
-            <figure class="tabs__img">
-              <a href="#">
-                <img src="img/img-16.jpg" alt="спидометр Stewart Model 26 Brass" width="241" height="160">
-              </a>
-            </figure>
-            <div class="tabs__info">
-              <a href="#" class="tabs__head">спидометр Stewart Model 26 Brass</a>
-              <a href="#" class="tabs__more">&raquo;</a>
-            </div>
-          </li>
-          <li class="tabs__item">
-            <figure class="tabs__img">
-              <a href="#">
-                <img src="img/img-17.jpg" alt="BMW 53 год" width="280" height="123">
-              </a>
-            </figure>
-            <div class="tabs__info">
-              <a href="#" class="tabs__head">BMW 53 год</a>
-              <a href="#" class="tabs__more">&raquo;</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="tabs__field" id="tabs-3">
-        <ul class="tabs__list">
-          <li class="tabs__item">
-            <figure class="tabs__img">
-              <a href="#">
-                <img src="img/img-18.jpg" alt="BMW 39 год" width="280" height="152">
-              </a>
-            </figure>
-            <div class="tabs__info">
-              <a href="#" class="tabs__head">BMW 39 год</a>
-              <a href="#" class="tabs__more">&raquo;</a>
-            </div>
-          </li>
-          <li class="tabs__item">
-            <figure class="tabs__img">
-              <a href="#">
-                <img src="img/img-19.jpg" alt="DKW" width="223" height="190">
-              </a>
-            </figure>
-            <div class="tabs__info">
-              <a href="#" class="tabs__head">DKW</a>
-              <a href="#" class="tabs__more">&raquo;</a>
-            </div>
-          </li>
-          <li class="tabs__item">
-            <figure class="tabs__img">
-              <a href="#">
-                <img src="img/img-20.jpg" alt="CATERHAM" width="280" height="187">
-              </a>
-            </figure>
-            <div class="tabs__info">
-              <a href="#" class="tabs__head">CATERHAM</a>
-              <a href="#" class="tabs__more">&raquo;</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="tabs__field" id="tabs-4">
-        <ul class="tabs__list">
-          <li class="tabs__item">
-            <figure class="tabs__img">
-              <a href="#">
-                <img src="img/img-21.jpg" alt="ГАЗ-51" width="253" height="190">
-              </a>
-            </figure>
-            <div class="tabs__info">
-              <a href="#" class="tabs__head">ГАЗ-51</a>
-              <a href="#" class="tabs__more">&raquo;</a>
-            </div>
-          </li>
-          <li class="tabs__item">
-            <figure class="tabs__img">
-              <a href="#">
-                <img src="img/img-22.jpg" alt="Jawa 600 Minor" width="268" height="190">
-              </a>
-            </figure>
-            <div class="tabs__info">
-              <a href="#" class="tabs__head">Jawa 600 Minor</a>
-              <a href="#" class="tabs__more">&raquo;</a>
-            </div>
-          </li>
-          <li class="tabs__item">
+          <li class="tabs__item model2">
             <figure class="tabs__img">
               <a href="#">
                 <img src="img/img-23.jpg" alt="Factory Five '33 Hot Rod" width="280" height="178">
@@ -333,12 +233,16 @@
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js">
   </script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
   
-  <!-- Tabs -->
+  <!-- Filtering -->
   <script>
-    $(function() {
-      $("#tabs").tabs();
+    $('#filters a').click(function(){
+      $('#filters a').removeClass('filter-active');
+      var selector = $(this).attr('data-filter');
+      $('#container').isotope({ filter: selector });
+      $(this).addClass('filter-active');
+      return false;
     });
   </script>
 </body>
