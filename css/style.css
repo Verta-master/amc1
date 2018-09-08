@@ -3370,8 +3370,9 @@ input.cart__change {
   font-weight: 500;
   line-height: 1;
 }
+.tabs__item:nth-child(4n),
 .tabs__item {
-  margin-right: 18px;
+  margin-right: 15px;
 }
 .filter-active {
   color: #d02222;
