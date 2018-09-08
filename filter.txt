@@ -1,4 +1,4 @@
-Выключить на этой странице:
+﻿Выключить на этой странице:
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
@@ -17,8 +17,9 @@
 </script>
 
 Добавить стили:
+.tabs__item:nth-child(4n),
 .tabs__item {
-  margin-right: 18px;
+  margin-right: 15px;
 }
 
 .filter-active {
