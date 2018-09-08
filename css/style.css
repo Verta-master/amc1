@@ -3501,6 +3501,10 @@ input.cart__change {
   .catalog__item {
     margin-right: 0;
   }
+  .tabs__item:nth-child(4n),
+  .tabs__item {
+    margin-right: 15px;
+  }
 }
 @media (max-width: 1022px) {
   .header__contacts {
